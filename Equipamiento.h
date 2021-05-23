@@ -11,28 +11,18 @@
 class Equipamiento{
     public:
         Equipamiento();
-        Equipamiento(string Casco, string Armadura, string Arma);
-        string getCasco();
-        string getArmadura();
-        string getArma();
-        void setCasco(string);
-        void setArmadura(string);
-        void setArma(string);
+        Equipamiento(int);
+        int getnumCharges();
+        void shootLaser;
         void imprime();
     private:
-        string Casco;
-        string Armadura;
-        string Arma;
+        int numCharges;
     
 };
 
-Equipamiento::Equipamiento(){
-    Casco= "Vacio";
-    Armadura= "Vacio";
-    Arma=  "Puño" ;
-}
+LaserMan::LaserMan(){
 
-Equipamiento::Equipamiento(string casco, string armadura, string arma){
+Equipamiento::Equipamiento(int ){
     Casco= casco;
     Armadura= armadura;
     Arma= arma;

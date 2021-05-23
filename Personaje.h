@@ -14,30 +14,28 @@ using namespace std;
 class Personaje{
     public:
         Personaje();
-        Personaje(string, Profesion, Equipamiento);
+        Personaje(string, int);
         string getNombre();
-        Profesion getFeatures();
-        Equipamiento getEquipado();
-        void setNombre(string);
-        void setFeatures(Profesion features);
-        void setEquipado(Equipamiento eq);
-        void imprime();
+        string getNivel();
+        string setNivel();
+        string setNombre();
+        void correr();
+        void saltar();
     
     private:
         string Nombre;
-        Profesion Features;
-        Equipamiento Equipado;
+        int Nivel;;
     
 };
 
 Personaje::Personaje(){
     Nombre= "-";
+    Nivel = 0;
 }
 
-Personaje::Personaje(string nombre, Profesion car, Equipamiento Eq){
+Personaje::Personaje(string nombre, int nivel){
     Nombre=nombre;
-    Features= car;
-    Equipado= Eq;
+    Nivel=nivel;
 }
 
 //Getters
@@ -45,33 +43,25 @@ string Personaje::getNombre(){
     return Nombre;
 }
 
-Profesion Personaje::getFeatures(){
-    return Features;
+Profesion Personaje::getNivel(){
+    return Nivel;
 }
-
-Equipamiento Personaje::getEquipado(){
-    return Equipado;
-}
-
 
 //Setters
 void Personaje::setNombre(string nombre){
     Nombre= nombre;
 }
 
-void Personaje::setEquipado(Equipamiento eq){
-    Equipado=eq;
+void Personaje::setNivel(int nivel){
+    Nivel= nivel;
 }
 
-void Personaje::setFeatures(Profesion features){
-    Features=features;
-}
+
 
 //Funcion imprimir
 void Personaje::imprime(){
     cout << "Personaje" << endl << "Nombre: " << Nombre << endl;
-    Features.imprime();
-    Equipado.imprime();
+    cout << "Nivel: " << Nivel << endl;
 
 }
 #endif /* Personaje_h */

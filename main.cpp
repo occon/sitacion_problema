@@ -2,7 +2,7 @@
 //  main.cpp
 //  SituacionProblema
 //
-//  Created by Lydia Delgado uriarte on 14/05/21.
+//  Created by Lydia Delgado Uriarte & Hugo dgar Palomares Estrella on 14/05/21.
 //
 
 #include <iostream>
@@ -113,13 +113,9 @@ int main(){
         cout << "|             Menú               |" << endl;
         cout << "|________________________________|" << endl;
         cout << "|                                |" << endl;
-        cout << "| 1. Guía ayuda                  |"<< endl;
-        cout << "| 2. Crear Personaje             |"<< endl;
-        cout << "| 3. Mostrar Inventario          |"<< endl;
-        cout << "| 4. Mostrar Personaje           |"<< endl;
-        cout << "| 5. Vencer criaturas            |" << endl;
-        cout << "| 6. Comprar & vender en tienda  |" << endl;
-        cout << "| 7. Finalizar juego             |" << endl;
+        cout << "| 1. Crear Personaje             |"<< endl;
+        cout << "| 2. Mostrar personajes          |"<< endl;
+        cout << "| 3. Finalizar juego             |" << endl;
         cout << "|________________________________|" << endl;
         cout << "" << endl << endl << "Opcion: ";
         cin >> opcion ;
