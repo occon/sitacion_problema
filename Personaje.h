@@ -7,24 +7,22 @@
 
 #ifndef Personaje_h
 #define Personaje_h
-#include "Profesion.h"
-#include "Equipamiento.h"
-using namespace std;
+
 
 class Personaje{
     public:
         Personaje();
         Personaje(string, int);
-        string getNombre();
-        string getNivel();
-        string setNivel();
+        void getNombre(string);
+        int getNivel();
+        void setNivel(int);
         string setNombre();
         void correr();
         void saltar();
     
-    private:
-        string Nombre;
-        int Nivel;;
+    protected:
+        string Nombre;  
+        int Nivel;
     
 };
 
@@ -34,8 +32,8 @@ Personaje::Personaje(){
 }
 
 Personaje::Personaje(string nombre, int nivel){
-    Nombre=nombre;
-    Nivel=nivel;
+    Nombre= nombre;
+    Nivel= nivel;
 }
 
 //Getters
@@ -43,8 +41,8 @@ string Personaje::getNombre(){
     return Nombre;
 }
 
-Profesion Personaje::getNivel(){
-    return Nivel;
+int Personaje::getNivel(){
+    return Nivel; 
 }
 
 //Setters
@@ -53,10 +51,16 @@ void Personaje::setNombre(string nombre){
 }
 
 void Personaje::setNivel(int nivel){
-    Nivel= nivel;
+    Nivel= nivel; 
+} 
+
+void Personaje::saltar(){
+    cout << "Saltar" << endl;
 }
 
-
+void Personaje::correr(){
+    cout << "Correr" << endl;
+}
 
 //Funcion imprimir
 void Personaje::imprime(){

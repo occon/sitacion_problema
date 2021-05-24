@@ -1,6 +1,5 @@
 //
-//  Inventario.h
-//  SituacionProblema
+//  Genius.h
 //
 //  Created by Lydia Delgado uriarte on 14/05/21.
 //
@@ -11,17 +10,25 @@
 class Genius{
     public:
         Genius();
-        Genius(int);
+        Genius(int);  
         int setNumAnswers();
         int getNumAnswers();
         void telepathy();
         void freeze();
     
     private:
-    int numAnswers;
-        
-        
+        int numAnswers;      
 };
+
+Genius::Genius(){
+    numAnswers=0;
+}
+
+Genius::Genius(int Ans){
+    numAnswers= Ans;
+}
+
+
 
 
 //Getters

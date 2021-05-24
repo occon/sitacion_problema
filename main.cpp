@@ -7,13 +7,9 @@
 
 #include <iostream>
 using namespace std;
-#include "Personaje.h"
-#include "Profesion.h"
-#include "Inventario.h"
-#include "Equipamiento.h"
-
+/*
 //Función para crear personaje
-void CrearPersonaje(Personaje pj, Profesion clase_asignada){
+void CrearPersonaje(Personaje pj){
     string nombre,clase;
     int ans=0, prof=0, fin=0;
     cout << "Bienvenido, primero que nada como quieres que se llame tu personaje?" << endl;
@@ -35,9 +31,9 @@ void CrearPersonaje(Personaje pj, Profesion clase_asignada){
             cout << " _____________________________" << endl;
             cout << "|   Que clase escoges?        |"<< endl;
             cout << "|-----------------------------|" << endl;
-            cout << "|        [1] Mago             |" << endl;
-            cout << "|        [2] Arquero          |" << endl;
-            cout << "|        [3] Asesino          |" << endl;
+            cout << "|        [1] LaserMan         |" << endl;
+            cout << "|        [2] Genius           |" << endl;
+            cout << "|        [3] ArrowWoman       |" << endl;
             cout << "|_____________________________|" << endl << "Selecciono la clase: ";
             cin >> prof;
             if (prof== 1 ){
@@ -98,13 +94,12 @@ void MostrarPersonaje(Personaje pj, Profesion clase_asignada, Equipamiento equip
 }
 
 //Función para
-
-int main(){
+*/
+int main(){/*
     int Pjcreado=0 ;
-    char opcion;
-    Personaje pj;
+    char opcion, o='1';
+    Personaje pj[];
     Profesion clase_asignada;
-    Equipamiento equipado;
     //Inventario arregloeq[100];
     do{
         cout << endl;
@@ -121,12 +116,15 @@ int main(){
         cin >> opcion ;
         switch (opcion){
             case '1':
-                cout << endl << "               Guía del juego" << endl;
-                cout << "Esta guía explica de forma breve el funcionamiento de este juego" << endl;
-                cout << "Profesiones: Otorga habilidades al personaje y se explican mas a detalle cuando se crea el personaje" << endl;
-                cout << "Inventario: Se almacena el dinero, comida, loot de criaturas" << endl ;
-                cout << "Como ganar dinero: Venciendo criaturas, estas tiran de loot dinero & cosas que se pueden vender" << endl;
-                cout << "Tienda: Puedes comprar tu equipamiento, comida y armas" << endl;
+                while (o != '*'){
+                    crearPersonaje(pj[]);
+                    cout << "Ingresa * para dejar de agregar personajes, cualquier otro caracter para seguir agregando" << endl;
+                    cin >> o;
+
+                }
+                CrearPersonaje(pj,clase_asignada);
+                
+                    Pjcreado++;
                 
                 break;
                 
@@ -163,7 +161,7 @@ int main(){
                 break;
         }
         
-    }while (opcion != '7');
+    }while (opcion != '7');*/
     return 0;
 }
 
